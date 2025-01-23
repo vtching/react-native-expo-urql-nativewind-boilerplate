@@ -31,7 +31,8 @@ npx sequelize-cli db:migrate
 ```
 
 App will run on http://localhost:8081/.
-To use on native apps, replace localhost with computer hostname to launch in Expo app: exp://laptop-hostname:8081/
+
+To use on native apps, replace localhost with computer hostname to launch in Expo app: exp://computer-hostname:8081/
 
 ## Docker & Devcontainer
 
@@ -84,3 +85,6 @@ npm install --save-dev @parcel/watcher concurrently
 ```
 
 ## NativeWind
+
+https://www.nativewind.dev/getting-started/react-native
+
