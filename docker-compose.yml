@@ -1,0 +1,15 @@
+services:
+  client:
+    build:
+      dockerfile: Dockerfile
+    image: myproject-client
+    container_name: myproject-client
+    networks:
+      - myproject-network
+    ports:
+      - '8081:8081'
+
+networks:
+  myproject-network:
+    driver: bridge
+    external: true

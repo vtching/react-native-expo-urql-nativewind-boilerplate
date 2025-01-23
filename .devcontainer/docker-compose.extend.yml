@@ -1,0 +1,10 @@
+# Override Dockerfile to use vscode Node & Typescript image
+# Bind volume to the current directory
+services:
+  client:
+    build:
+      dockerfile: .devcontainer/Dockerfile
+    image: myproject-client-devcontainer
+    volumes:
+      - .:/client:cached
+      - /client/node_modules
